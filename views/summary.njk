@@ -1,6 +1,6 @@
 # Summary
-{% for category, projects in context %}
-    {{ category}}
+{% for category, projects in categories %}
+    # {{ category}}
     {% for name, project in projects %}
         {{ project | link("project.njk", name + ".md") }}
     {%endfor %}
