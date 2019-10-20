@@ -2,5 +2,5 @@
 
 # Side-projects
 
-[Nomad](./Nomad.md)
+* [Nomad](./Nomad.md)
 
