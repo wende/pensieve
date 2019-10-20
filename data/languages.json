@@ -1,0 +1,11 @@
+{
+    "Erlang": {
+        "exts": [".erl"]
+    },
+    "Elixir": {
+        "exts": [".ex", ".exs"]
+    },
+    "JavaScript": {
+        "exts": [".js"]
+    }
+}

@@ -1,0 +1,5 @@
+{
+    "SUMMARY.MD": "views/summary.njk",
+    "README.MD": "views/main.njk",
+    "page/404.md": "views/404.njk"
+}

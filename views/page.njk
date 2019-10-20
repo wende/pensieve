@@ -1,0 +1,4 @@
+Project:
+{% for project in projects %}
+    {{ project | link("project.njk") }}
+{%endfor %}
