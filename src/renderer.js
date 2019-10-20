@@ -13,9 +13,12 @@ env.addFilter("link", (context, templatePath, renderPath, displayedName) => {
 })
 
 
-module.exports.render = function(name, context){
-    return env.render(name, context)
+module.exports.render = function(name){
+    return env.render(name, {})
               .split("\n")
               .map((a) => a.trimStart())
               .join("\n")
+}
+module.exports.addGlobal = function(name, context){
+    env.addGlobal(name, context)
 }

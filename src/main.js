@@ -16,7 +16,7 @@ const ensureDirExists = (filePath) => {
       fs.mkdirSync(dirname);
 }
 
-const context = require('../data/projects.json')
+const categories = require('../data/projects.json')
 const routing = require('../data/routing.json')
 
 const PREFIX = __dirname + "/../"
@@ -24,12 +24,11 @@ const PREFIX = __dirname + "/../"
 fsExtra.emptyDir(PREFIX + "output")
 
 timing.getTimeseries().then((timeseries) => {
+      renderer.addGlobal("timeseries", timeseries)
+      renderer.addGlobal("categories", categories)
       for (let path in routing) {
             ensureDirExists(PREFIX + "output/" + path)
-            let res = renderer.render(
-                  PREFIX + routing[path],
-                  { context, timeseries }
-            )
+            let res = renderer.render( PREFIX + routing[path])
             writeFile(PREFIX + "output/" + path, res)
       }
 })
