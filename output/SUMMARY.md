@@ -1,6 +1,6 @@
 # Summary
 
-# Side-projects
+## Side-projects
 
 * [Nomad](./Nomad.md)
 
