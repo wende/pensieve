@@ -3,4 +3,4 @@ This project is my goto map of my mind and ideas. Sort of a ['Pensieve'](https:/
 
 It also uses [Timing]()
 
-![Ants](https://media.giphy.com/media/MLYvQVgQ1RSA8/giphy.gif)
+![Under Construction](https://media.giphy.com/media/MLYvQVgQ1RSA8/giphy.gif)
